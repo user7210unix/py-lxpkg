@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LearnixOS | Home</title>
+    <link rel="icon" href="assets/images/favicon.png" type="image/png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preload" href="assets/fonts/panton.woff2" as="font" type="font/woff2" crossorigin>
+</head>
+<body>
+    <!-- Liquid Glass Background -->
+    <div class="bouncing-blobs-container">
+        <div class="bouncing-blobs-glass"></div>
+        <div class="bouncing-blobs">
+            <div class="bouncing-blob bouncing-blob--blue"></div>
+            <div class="bouncing-blob bouncing-blob--white"></div>
+            <div class="bouncing-blob bouncing-blob--purple"></div>
+            <div class="bouncing-blob bouncing-blob--pink"></div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <a href="index.html" class="logo-link">
+            <picture>
+                <source srcset="assets/images/logo.webp" type="image/webp">
+                <img src="assets/images/logo.png" alt="LearnixOS Logo" class="logo">
+            </picture>
+        </a>
+        <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+            <i class="fas fa-bars"></i>
+            <i class="fas fa-times"></i>
+        </button>
+        <div class="nav-links">
+            <a href="index.html" class="glass-button"><i class="fas fa-home"></i> Home</a>
+            <a href="repo.html" class="glass-button"><i class="fas fa-box"></i> Packages</a>
+            <a href="changelog.html" class="glass-button"><i class="fas fa-clock"></i> Changelog</a>
+            <a href="slimtools.html" class="glass-button"><i class="fas fa-tools"></i> SlimTools</a>
+            <a href="lxpkg.html" class="glass-button"><i class="fas fa-cube"></i> LXPKG</a>
+            <a href="about.html" class="glass-button"><i class="fas fa-users"></i> About</a>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+        <section class="hero">
+            <div class="hero-content glass-card">
+                <h1>LearnixOS</h1>
+                <p>A Linux-based operating system designed for both beginners and advanced users, offering a lightweight yet powerful experience.</p>
+                <div class="cta-buttons">
+                    <a href="https://github.com/LearnixOS/LearnixOS/releases/" class="glass-button primary">Download Now</a>
+                    <a href="#community" class="glass-button secondary">Get Involved</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="mission glass-card">
+            <h2>Our Mission</h2>
+            <p>We aim to make Linux accessible to everyone while providing advanced tools for power users, bridging simplicity and functionality.</p>
+        </section>
+
+        <section class="why-learnix">
+            <h2>Why Choose LearnixOS?</h2>
+            <div class="why-grid">
+                <div class="why-item glass-card">
+                    <h3>Lightweight</h3>
+                    <p>Optimized for performance on modern and older hardware.</p>
+                    <picture>
+                        <source srcset="assets/images/soon1.webp" type="image/webp">
+                        <img src="assets/images/soon1.png" alt="Lightweight" class="why-image" loading="lazy" onerror="this.src='assets/images/fallback.png'">
+                    </picture>
+                </div>
+                <div class="why-item glass-card">
+                    <h3>User-Friendly</h3>
+                    <p>Intuitive interfaces for newcomers to Linux.</p>
+                    <picture>
+                        <source srcset="assets/images/soon1.webp" type="image/webp">
+                        <img src="assets/images/soon1.png" alt="User-Friendly" class="why-image" loading="lazy" onerror="this.src='assets/images/fallback.png'">
+                    </picture>
+                </div>
+                <div class="why-item glass-card">
+                    <h3>Customizable</h3>
+                    <p>Tailor your experience with flexible environments.</p>
+                    <picture>
+                        <source srcset="assets/images/soon1.webp" type="image/webp">
+                        <img src="assets/images/soon1.png" alt="Customizable" class="why-image" loading="lazy" onerror="this.src='assets/images/fallback.png'">
+                    </picture>
+                </div>
+            </div>
+        </section>
+
+        <section class="features">
+            <h2>Key Features</h2>
+            <div class="feature-grid">
+                <div class="feature-card glass-card">
+                    <picture>
+                        <source srcset="assets/images/soon1.webp" type="image/webp">
+                        <img src="assets/images/soon1.png" alt="Accessibility" class="feature-image" loading="lazy" onerror="this.src='assets/images/fallback.png'">
+                    </picture>
+                    <h3>Accessibility</h3>
+                    <p>Designed with new Linux users in mind.</p>
+                </div>
+                <div class="feature-card glass-card">
+                    <picture>
+                        <source srcset="assets/images/soon1.webp" type="image/webp">
+                        <img src="assets/images/soon1.png" alt="Desktop Environments" class="feature-image" loading="lazy" onerror="this.src='assets/images/fallback.png'">
+                    </picture>
+                    <h3>Desktop Environments</h3>
+                    <p>Choose i3 or Cinnamon desktop.</p>
+                </div>
+                <div class="feature-card glass-card">
+                    <picture>
+                        <source srcset="assets/images/soon1.webp" type="image/webp">
+                        <img src="assets/images/soon1.png" alt="Custom Coreutils" class="feature-image" loading="lazy" onerror="this.src='assets/images/fallback.png'">
+                    </picture>
+                    <h3>Custom Coreutils</h3>
+                    <p>Lightweight, efficient utilities developed in-house.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="community" id="community">
+            <h2>Join Our Community</h2>
+            <p>Connect with us to stay updated, ask questions, and contribute.</p>
+            <div class="social-links">
+                <a href="https://github.com/LearnixOS" target="_blank" class="glass-button"><i class="fab fa-github"></i> GitHub</a>
+                <a href="https://www.youtube.com/@_Learnix" target="_blank" class="glass-button"><i class="fab fa-youtube"></i> YouTube</a>
+                <a href="https://discord.gg/VvQFNdzjRh" target="_blank" class="glass-button"><i class="fab fa-discord"></i> Discord</a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="glass-card">
+        <div class="footer-content">
+            <h3>LearnixOS</h3>
+            <p>A Linux distribution built for simplicity and power.</p>
+        </div>
+        <p class="footer-bottom">© 2025 LearnixOS. All rights reserved.</p>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top glass-button"><i class="fas fa-arrow-up"></i></button>
+
+    <!-- Blob Animation Script -->
+    <script>
+        const MIN_SPEED = 1.5;
+        const MAX_SPEED = 2.5;
+
+        function randomNumber(min, max) {
+            return Math.random() * (max - min) + min;
+        }
+
+        class Blob {
+            constructor(el) {
+                this.el = el;
+                const boundingRect = this.el.getBoundingClientRect();
+                this.size = boundingRect.width;
+                this.initialX = randomNumber(0, window.innerWidth - this.size);
+                this.initialY = randomNumber(0, window.innerHeight - this.size);
+                this.el.style.top = `${this.initialY}px`;
+                this.el.style.left = `${this.initialX}px`;
+                this.vx = randomNumber(MIN_SPEED, MAX_SPEED) * (Math.random() > 0.5 ? 1 : -1);
+                this.vy = randomNumber(MIN_SPEED, MAX_SPEED) * (Math.random() > 0.5 ? 1 : -1);
+                this.x = this.initialX;
+                this.y = this.initialY;
+            }
+
+            update() {
+                this.x += this.vx;
+                this.y += this.vy;
+                if (this.x >= window.innerWidth - this.size) {
+                    this.x = window.innerWidth - this.size;
+                    this.vx *= -1;
+                }
+                if (this.y >= window.innerHeight - this.size) {
+                    this.y = window.innerHeight - this.size;
+                    this.vy *= -1;
+                }
+                if (this.x <= 0) {
+                    this.x = 0;
+                    this.vx *= -1;
+                }
+                if (this.y <= 0) {
+                    this.y = 0;
+                    this.vy *= -1;
+                }
+            }
+
+            move() {
+                this.el.style.transform = `translate(${this.x - this.initialX}px, ${this.y - this.initialY}px)`;
+            }
+        }
+
+        function initBlobs() {
+            const blobEls = document.querySelectorAll('.bouncing-blob');
+            const blobs = Array.from(blobEls).map((blobEl) => new Blob(blobEl));
+
+            function update() {
+                requestAnimationFrame(update);
+                blobs.forEach((blob) => {
+                    blob.update();
+                    blob.move();
+                });
+            }
+
+            requestAnimationFrame(update);
+        }
+
+        initBlobs();
+
+        // Navigation Toggle
+        document.addEventListener('DOMContentLoaded', () => {
+            const navToggle = document.querySelector('.nav-toggle');
+            const navLinks = document.querySelector('.nav-links');
+
+            navToggle.addEventListener('click', (e) => {
+                e.preventDefault();
+                navToggle.classList.toggle('active');
+                navLinks.classList.toggle('active');
+                navToggle.setAttribute('aria-expanded', navToggle.classList.contains('active'));
+            });
+
+            document.querySelectorAll('.nav-links a').forEach(link => {
+                link.addEventListener('click', () => {
+                    navToggle.classList.remove('active');
+                    navLinks.classList.remove('active');
+                    navToggle.setAttribute('aria-expanded', 'false');
+                });
+            });
+
+            document.addEventListener('click', (e) => {
+                if (!navLinks.contains(e.target) && !navToggle.contains(e.target)) {
+                    navToggle.classList.remove('active');
+                    navLinks.classList.remove('active');
+                    navToggle.setAttribute('aria-expanded', 'false');
+                }
+            });
+
+            // Back to Top Button
+            let timeout;
+            window.addEventListener('scroll', () => {
+                clearTimeout(timeout);
+                timeout = setTimeout(() => {
+                    const backToTop = document.querySelector('.back-to-top');
+                    if (window.scrollY > 300) {
+                        backToTop.classList.add('visible');
+                    } else {
+                        backToTop.classList.remove('visible');
+                    }
+                }, 100);
+            });
+        });
+    </script>
+</body>
+</html>
